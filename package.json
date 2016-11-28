@@ -1,0 +1,23 @@
+{
+  "name": "database_server",
+  "version": "1.0.0",
+  "description": "tech_test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meeshyep/TechTest_Database_Server.git"
+  },
+  "author": "Michelle Epstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meeshyep/TechTest_Database_Server/issues"
+  },
+  "homepage": "https://github.com/meeshyep/TechTest_Database_Server#readme",
+  "dependencies": {
+    "Server": "^1.0.0",
+    "module_name": "^1.0.0"
+  }
+}
