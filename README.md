@@ -1,11 +1,10 @@
 ####Database server tech test
 
-```
+
 Setting up the program <br>
 - npm install <br>
 - npm init <br>
 - jasmine init <br>
-```
 
 
 ##
