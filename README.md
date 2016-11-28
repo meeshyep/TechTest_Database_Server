@@ -1,5 +1,12 @@
 ####Database server tech test
 
+```
+Running the program 
+```
+- npm install <br>
+- npm init <br>
+- jasmine init <br>
+
 ##
 
 Today we will practice a tech test to demonstrate your understanding of web technologies. This is an actual tech test that was given to one of our coaches when they applied for a dev role.

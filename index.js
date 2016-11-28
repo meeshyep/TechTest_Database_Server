@@ -47,3 +47,5 @@ exports.listen = function () {
 exports.close = function (callback) {
   this.server.close(callback);
 };
+
+app.listen(4000);
