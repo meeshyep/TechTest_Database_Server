@@ -18,6 +18,7 @@
   "homepage": "https://github.com/meeshyep/TechTest_Database_Server#readme",
   "dependencies": {
     "Server": "^1.0.0",
+    "debug-log": "^1.0.1",
     "module_name": "^1.0.0"
   }
 }
