@@ -1,6 +1,5 @@
-var Browser = require('testing');
-var browser = new Browser();
 var server = require('../../lib/index.js');
+var request = require('request');
 var url = "http://localhost:4000";
 
 describe("saving_key_to_object", function() {
@@ -14,8 +13,16 @@ describe("saving_key_to_object", function() {
   });
 
   it('should successfully return the params data on /set path', function(next) {
-    browser.visit(url + '/set?name=Michelle', function(err) {
-      expect(browser.html("body")).toContain("name=Michelle");
+    request(url + '/set?name=michelle', function(error, response, body) {
+      expect(body).toEqual('{"name":"michelle"}');
+      next();
+    });
+  });
+
+  it('should return an error on an incorrect format', function(next) {
+    request(url + '/set?name=michelle', function(error, response, body) {
+      expect(response.statusCode).toEqual(400);
+      expect(body).toEqual('{"message": "This is an incorrect request format"}');
       next();
     });
   });

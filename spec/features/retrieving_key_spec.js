@@ -14,8 +14,9 @@ describe ('retrieving_key_from_object', function () {
   });
 
   it('should successfully return params data on the /set path', function(next) {
-    request(url + '/get?key=name', function(err, res, body) {
-      expect(body).toContain("michelle");
+    request(url + '/get?key=name', function(error, response, body) {
+      expect(response.statusCode).toEqual(200);
+      expect(body).toEqual("michelle");
       next();
     });
   });
