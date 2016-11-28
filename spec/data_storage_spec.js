@@ -1,8 +1,8 @@
-var DataStorage = require("../lib/data_storage.js")
+var DataStorage = require("../lib/data_storage.js");
 
 describe ("Data Storage Module", function () {
 
-  beforeEach function() {
+  beforeEach (function() {
     dataStorage = new DataStorage();
   });
 
@@ -11,12 +11,12 @@ describe ("Data Storage Module", function () {
   });
 
   it ("can add items to state", function () {
-    dataStorage.addToState("name", "michelle")
-    expect(dataStorage._state).toEqual({"name", "michelle"});
+    dataStorage.addToState({name: "michelle"});
+    expect(dataStorage._state).toEqual({"name": "michelle"});
   });
 
   it ("can retrive items from state", function () {
-    dataStorage.addToState("name", "michelle")
+    dataStorage.addToState({name: "michelle"});
     expect(dataStorage.retrieveValue("name")).toEqual("michelle");
   });
-})
+});
