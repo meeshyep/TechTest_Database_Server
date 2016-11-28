@@ -12,7 +12,7 @@ describe ("Data Storage Module", function () {
 
   it ("can add items to state", function (next) {
     dataStorage.addToState("name=michelle", function(err, success){
-      expect(success).toEqual({"name": "michelle"});
+      expect(success).toEqual('{"name": "michelle"}');
       next();
     });
   });
