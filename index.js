@@ -1,7 +1,7 @@
 var http = require('http');
 var url = require('url');
 var DataStorage = require ('./lib/data_storage.js');
-// var dataStorage = new DataStorage();
+var dataStorage = new DataStorage();
 
 this.server = http.createServer(function (req, res) {
   var parsedURL = url.parse(req.url);
