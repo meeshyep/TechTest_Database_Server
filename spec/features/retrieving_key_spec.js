@@ -20,4 +20,12 @@ describe ('retrieving_key_from_object', function () {
       next();
     });
   });
+
+  it("should return error data on unknown key", function(next) {
+    request(url + '/get?key=nothere', function (error, response, body) {
+      expect(response.statusCode).toEqual(400);
+      expect(body).toEqual('{"message":"Resource not found"}');
+      next();
+    });
+  });
 });
