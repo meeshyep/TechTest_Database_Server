@@ -1,6 +1,6 @@
 var http = require('http');
 var url = require('url');
-// var DataStorage = require ('./lib/data_storage.js');
+var DataStorage = require ('./lib/data_storage.js');
 // var dataStorage = new DataStorage();
 
 this.server = http.createServer(function (req, res) {
